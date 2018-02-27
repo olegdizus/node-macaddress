@@ -67,6 +67,15 @@ switch (os.platform()) {
     case 'sunos':
         _getMacAddress = require('./lib/unix.js');
         break;
+
+    case 'ios':
+        _getMacAddress = require('./lib/ios.js');
+        break;
+    
+
+    case 'android':
+        _getMacAddress = require('./lib/android.js');
+        break;
         
     default:
         console.warn("node-macaddress: Unkown os.platform(), defaulting to `unix'.");

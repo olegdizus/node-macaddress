@@ -17,6 +17,9 @@
     "network",
     "system"
   ],
+  "dependencies": {
+    "react-native-os": "Robdel12/react-native-os"
+  },
   "author": "Julian Fleischer",
   "license": "MIT",
   "bugs": {
